@@ -1,0 +1,22 @@
+<!-- vulnerable-website/public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerable Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Vulnerable Website!</h1>
+        <p>This website has a misconfigured CORS policy, making its API data accessible to other origins if you are "logged in" here (we've set a dummy cookie for you).</p>
+
+        <h2>My Data (from this site's API)</h2>
+        <button id="fetchOwnDataBtn">Fetch My Secret Data</button>
+        <pre id="data-display">Click the button to fetch data...</pre>
+        <p><i>(Note: This button fetches data from the same origin, so CORS policy isn't strictly tested by this button alone. It's to show the API works and what data it provides.)</i></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

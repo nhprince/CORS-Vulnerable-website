@@ -1,0 +1,13 @@
+{
+  "name": "vulnerable-website",
+  "version": "1.0.0",
+  "description": "A website with a CORS vulnerability",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cookie-parser": "^1.4.6"
+  }
+}
